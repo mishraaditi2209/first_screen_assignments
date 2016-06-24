@@ -1,4 +1,5 @@
-html_report: --format pretty --format json --out=report/features_report.json
+json_report: --format pretty --format json --out=report/features_report.json
+html_report: --format pretty --format html --out=report/features_report.html
 parallel: --format progress --format ParallelTests::Cucumber::FailuresLogger --out tmp/cucumber_failures.log
 bvt: --tags @test
 selenium : DRIVER=selenium

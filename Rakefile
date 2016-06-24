@@ -10,7 +10,7 @@ require 'shellwords'
 # end
 
 Cucumber::Rake::Task.new(:cuke) do |t|
-  t.cucumber_opts = %w{--format progress --format json --out=report/features_report.json }
+  t.cucumber_opts = %w{--format progress --format html --out=report/features_report.html }
 end
 
 # task :default => :features
