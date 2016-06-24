@@ -1,0 +1,104 @@
+[
+  {
+    "uri": "features/cruise_page.feature",
+    "id": "cruise-page",
+    "keyword": "Feature",
+    "name": "Cruise Page",
+    "description": "  As a user\n  I wish to see\n  Mercury Tour for cruise details",
+    "line": 2,
+    "tags": [
+      {
+        "name": "@feature",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "id": "cruise-page;navigate-to-cruise-page-from-homepage",
+        "keyword": "Scenario",
+        "name": "Navigate to cruise page from homepage",
+        "description": "",
+        "line": 8,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@feature",
+            "line": 1
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8419481000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I on mercury tour home page",
+            "line": 9,
+            "match": {
+              "location": "features/step_definitions/homepage_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1934111000
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I select Cruise from the left pane",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/homepage_steps.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1053060000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see alaska picture logo",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/homepage_steps.rb:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41003000
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I should see Cruise Itinerary",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/homepage_steps.rb:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33002000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1412080000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
