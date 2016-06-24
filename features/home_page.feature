@@ -3,7 +3,7 @@ Feature: Home Page
   I wish to visit
   Mercury Tour to see the options
 
-  Scenario:  Verify Mercury Tour Home Page
+  Scenario: Verify Mercury Tour Home Page
     Given I am on mercury tour home page
     When I look for content
     Then I should see these options
